@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Netflix-Streaming-Device"/>
+<aop-project name="Netflix-Streaming-Plan"/>
+<aop-project name="Netflix-Streaming-Tenure"/>
+</aop-reference-model>

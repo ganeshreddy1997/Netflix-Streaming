@@ -1,0 +1,47 @@
+package io.springboot2.x.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.springboot2.x.domain.NetflixDevice;
+import io.springboot2.x.dto.NetflixDevice2DTO;
+import io.springboot2.x.dto.NetflixDeviceDTO;
+import io.springboot2.x.service.INetflixDeviceService;
+
+@RestController
+public class NetflicDeviceController {
+	@Autowired
+	private INetflixDeviceService service;
+	@PostMapping("/device/add")
+	ResponseEntity<String> postDevice(@RequestBody NetflixDeviceDTO device) {
+		return new ResponseEntity<String>(service.addDevice(device),HttpStatus.OK);
+		
+	}
+	@GetMapping("/device/all")
+	ResponseEntity<List<NetflixDevice2DTO>> getAll(){
+		
+		return new ResponseEntity<List<NetflixDevice2DTO>>(service.readAll(),HttpStatus.OK);
+	}
+	@GetMapping("/device/{mobileNo}")
+	ResponseEntity<List<NetflixDevice2DTO>> readByMobile(@PathVariable String mobileNo){
+		return new ResponseEntity<List<NetflixDevice2DTO>>(service.readByMobile(mobileNo),HttpStatus.OK);
+	}
+	@PutMapping("/device/update")
+	ResponseEntity<String> updateDevice(@RequestBody NetflixDevice device){
+		return new ResponseEntity<String>(service.updateDevice(device),HttpStatus.OK);
+	}
+	@PostMapping("device/delete")
+	ResponseEntity<String> deleteById(Integer id) {
+		return new ResponseEntity<String>(service.deleteById(id),HttpStatus.OK);
+	}
+
+}

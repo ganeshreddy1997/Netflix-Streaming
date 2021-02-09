@@ -1,0 +1,5 @@
+package io.springboot2.x.repository;
+
+public interface NetflixTenureRepository {
+
+}

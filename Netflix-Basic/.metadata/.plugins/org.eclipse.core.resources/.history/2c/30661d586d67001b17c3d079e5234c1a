@@ -1,0 +1,40 @@
+package io.springboot2.x.service.impl;
+
+import java.util.List;
+
+import io.springboot2.x.entity.NetflixPlan;
+import io.springboot2.x.service.INetflixPlanService;
+
+public class NeflixPlanServiceImpl implements INetflixPlanService {
+
+	@Override
+	public List<NetflixPlan> getAllPlans() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public NetflixPlan getPlanById(String planId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updatePlan(NetflixPlan np) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String addPlan(NetflixPlan np) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deletePlanById(String planId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

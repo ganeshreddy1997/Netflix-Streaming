@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Netflix-Streaming-Tenure/src\/main\/java&lt;io.springboot2.x.service{INetflixTenureService.java[INetflixTenureService" modifiers="513" timestamp="1612157234974"/>
+<typeInfo handle="=Netflix-Streaming-Device/src\/main\/java&lt;io.springboot2.x.service{INetflixDeviceService.java[INetflixDeviceService" modifiers="513" timestamp="1612164247778"/>
+<typeInfo handle="=Netflix-Streaming-Device/C:\/Users\/satis\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.4.3\/spring-data-jpa-2.4.3.jar&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1612152699108"/>
+<typeInfo handle="=Netflix-Streaming-Plan/src\/main\/java&lt;io.springboot2.x.service{INetflixPlanService.java[INetflixPlanService" modifiers="513" timestamp="1612499301040"/>
+</typeInfoHistroy>

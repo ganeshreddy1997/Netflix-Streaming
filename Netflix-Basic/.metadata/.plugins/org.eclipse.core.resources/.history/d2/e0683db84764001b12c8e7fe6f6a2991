@@ -1,0 +1,10 @@
+package io.springboot2.x.domain;
+
+import javax.persistence.Entity;
+
+@Entity
+public class NetflixTenure {
+	
+	
+
+}

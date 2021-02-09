@@ -1,0 +1,5 @@
+package io.springboot2.x;
+
+public class NetflixDevice2DTO {
+
+}

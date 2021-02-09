@@ -1,0 +1,11 @@
+package io.springboot2.x.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import io.springboot2.x.domain.NetflixTenure;
+
+public interface NetflixTenureRepository extends JpaRepository<NetflixTenure, Integer> {
+
+	
+	
+}

@@ -1,0 +1,16 @@
+package io.springboot2.x.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class NetflixPlan {
+	@Id
+	private String planId;
+	private String planName;
+	private String pricePerMonth;
+	private String featuresProvide;
+	
+}

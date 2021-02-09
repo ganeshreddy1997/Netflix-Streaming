@@ -1,0 +1,5 @@
+package io.springboot2.x.entity;
+
+public class NetflixPlan {
+
+}
